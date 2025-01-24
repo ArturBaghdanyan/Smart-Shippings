@@ -1,0 +1,18 @@
+@media only screen and (max-width: 992px) {
+    .size {
+        padding: 0 7rem !important;
+    }
+    .freight {
+        padding: 60px 7rem !important;
+    }
+
+    .free-quote {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .service-section .service-section-text {
+        width: 100% !important;
+    }
+}

@@ -1,0 +1,14 @@
+section .image-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    gap: 15px;
+}
+
+@media only screen and (max-width: 768px) {
+   section .image-container {
+        padding: 40px !important;
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+}

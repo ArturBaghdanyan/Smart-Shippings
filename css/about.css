@@ -1,0 +1,111 @@
+
+
+.who-we-are .who-we-are-dis {
+    padding-top: 70px;
+    padding-bottom: 30px;
+    padding-right: 40px;
+    padding-left: 13%;
+}
+.who-we-are .who-we-are-dis h2 {
+    margin-bottom: 30px;
+    font-size: 30px;
+    font-weight: 900;
+    font-family: 'Assistant', sans-serif;
+    line-height: 1.25;
+}
+
+.who-we-are .who-we-are-dis p {
+    font-size: 16px;
+    line-height: 26px;
+}
+
+.who-we-are .who-we-are-img {   
+    width: 65%;
+    height: 400px !important;
+}
+
+.who-we-are img {
+    max-width: 100%;
+    height: auto;
+    vertical-align: top;
+}
+.who-we-are-img-2 {
+    display: none;
+}
+
+@media only screen and (max-width: 992px) {
+    .size {
+        padding: 60px 40px !important;
+    }
+    .who-we-are-sec {
+        width: 100% !important;
+        display: flex;
+        flex-direction: column;
+        padding: 0 !important;
+    }
+    .who-we-are-sec  .who-we-are-dis {
+        width: 100% !important;
+        padding: 0 !important;
+    }
+    .who-we-are-img {
+        display: none !important;
+    }
+    .who-we-are-img-2 {
+        display: flex !important;
+    }
+}
+
+.careers {
+    background-image: url('../assets/about/carrers.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.careers .careers-row:hover {
+    box-shadow: none !important;
+    background: none !important;
+}
+.careers .careers-row .form textarea::placeholder {
+    color: red !important;
+}
+.careers form input:hover, div input:hover {
+    box-shadow: none !important;
+}
+
+@media only screen and (max-width: 992px) {
+    .careers-row {
+        display: flex;
+        flex-direction: column !important;
+        padding: 60px 30px !important;
+    }
+    .careers-row div, .careers-row form {
+        width: 100% !important;
+    }
+    .careers-row form {
+        margin-top: 40px;
+    }
+}
+
+.article-row {
+    padding: 3rem 5rem;
+}
+.article-row .article-text {
+    padding-right: 30px; 
+    width: 70%;
+}
+.form:hover {
+    background: none;
+    box-shadow: none;
+}
+
+@media only screen and (max-width: 992px) {
+    .article-row {
+        display: flex;
+         flex-direction: column;
+         text-align: center;
+         align-items: center;
+    }
+    .article-row .article-text {
+        padding: 0 !important;
+    }
+}

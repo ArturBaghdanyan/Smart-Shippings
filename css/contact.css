@@ -1,0 +1,22 @@
+@media only screen and (max-width: 992px) {
+    .contact-nav {
+        padding: 40px !important;
+    }
+
+}
+
+@media only screen and (max-width: 1200px) {
+    .form-a {
+        display: flex;
+        flex-direction: column;
+        align-items: end !important;
+        row-gap: 20px;
+    }
+    .form-a .image {
+        max-width: 500px !important;
+    }
+}
+
+.form-a form:hover {
+    box-shadow: none;
+}
