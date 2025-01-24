@@ -1,4 +1,16 @@
-@media only screen and (max-width: 992px) {
+@media only screen and (max-width: 500px) {
+    .size {
+        padding: 20px !important;
+    }
+    .free-quote {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px !important;
+    }
+}
+
+@media only screen and (min-width: 501px) and (max-width: 992px) {
     .size {
         padding: 0 7rem !important;
     }

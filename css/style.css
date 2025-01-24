@@ -13,6 +13,12 @@
 .size {
     padding: 0 5rem;
 }
+
+@media only screen and (max-width: 400px) {
+    .size {
+        padding: 0 20px !important;
+    }
+}
 #desktop-nav div.a:active {
     color: blue;
 }
@@ -73,7 +79,7 @@
 
 .columns .animate {
       transition: all 2s ease;
-      transform: translateY(-100%, -100%);
+      /* transform: translateY(-100%, -100%); */
       /* opacity: 0; */
     }
 
@@ -81,6 +87,14 @@
     transform: translateY(0);
     /* opacity: 1; */
 }
+
+/* @media only screen and (max-width: 400px) {
+    .columns .animate {
+        font-size: 32px !important;
+        transition: all 2s ease;
+        transform: translateY(-100%, -100%);
+    }
+} */
 
 .swiper-slide {
     width: 100%;
@@ -188,7 +202,27 @@
     right: 0;
     z-index: 1;
 }
-@media only screen and (max-width: 950px) {
+
+@media only screen and (min-width: 368px) and (max-width: 519px) {
+    .departure > .departure-container {
+        display: grid;
+        grid-template-areas:
+        "a a"
+        "b b"
+        "c c"
+        "d d";
+        grid-template-columns: 1fr !important;
+        width: 100%;
+    }
+    .departure .departure-container > .sec-column, .th-column {
+        max-width: 100% !important;
+    } 
+    .departure .departure-container > .departure-description {
+        max-width: 100% !important;
+    } 
+}
+
+@media only screen and (min-width: 520px) and (max-width: 670px) {
     .departure > .departure-container {
         display: grid;
         grid-template-areas:
@@ -198,6 +232,22 @@
         grid-template-columns: 1fr 1fr !important;
         width: 100%;
     }
+    .departure .departure-container > .departure-description {
+        max-width: 100% !important;
+    } 
+}
+
+@media only screen and (min-width: 671px) and (max-width: 950px) {
+    .departure > .departure-container {
+        display: grid;
+        grid-template-areas:
+        "a a"
+        "b c"
+        "d d";
+        grid-template-columns: 1fr 1fr !important;
+        width: 100%;
+    }
+   
 }
 
 @media only screen and (min-width: 955px) and (max-width: 1200px) {
@@ -246,6 +296,7 @@
     gap: 30px;
 }
 
+
 @media only screen and (max-width: 783px) {
     .section {
         padding: 0 20px !important;
@@ -261,6 +312,7 @@
     #section-wrapper {
         display: grid;
         grid-template-columns: auto;
+        padding: 20px !important;
         width: 100%;
     }
 }
@@ -286,6 +338,21 @@
 .section-piece > div .icon {
     width: 30px !important;
     height: 30px !important;
+}
+
+@media only screen and (max-width: 560px) {
+    .article-row {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding: 20px !important;
+    }
+    .article-row > .article-text {
+        width: 100% !important;
+    }
+    .article-row > .article-image {
+        width: 100% !important;
+    }
 }
 
 @media screen and (max-width: 769px) {
@@ -355,6 +422,8 @@ section div .input:hover {
     box-shadow: none !important;
 }
 
+
+
 @media only screen and (max-width: 1200px) {
     .input-section {
         width: 90%;
@@ -363,7 +432,7 @@ section div .input:hover {
         justify-content: center;
         margin: auto;
         row-gap: 20px;
-        padding: 60px 30px !important;
+        padding: 60px 0 !important;
     }
     .input-section .input-column {
         margin-top: 40px;
