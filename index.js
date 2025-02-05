@@ -82,13 +82,13 @@ $(document).ready(function() {
         const slideHTML = `    
       <div class="swiper-slide columns" key=${item.id}
       style="background-image: url('${item.bgImage}')">
-        <div class="column size">
+        <div class="column">
             <div class="lh-md d-flex flex-column swiper-image" 
                 style="${item === swiperData[0] ? 'text-transform: uppercase;' : ''}">
-                <span style="font-size: 64px" class="animate">${item.text1}</span>
+                <span class="fs-1 md:fs-3" class="animate">${item.text1}</span>
                 <span class="fs-2 fw-bold animate">${item.text2}</span>
                 <span 
-                style="padding-left: 33rem; ${item === swiperData[0] ? 'font-size: 64px;' : 'font-size: 18px'}"
+                style="padding-left: 5rem; ${item === swiperData[0] ? 'font-size: 64px;' : 'font-size: 18px'}"
                 class="animate"
                 >${item.text3}</span>
             </div>
