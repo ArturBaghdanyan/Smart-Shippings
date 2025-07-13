@@ -1,10 +1,7 @@
 
 
 .who-we-are .who-we-are-dis {
-    padding-top: 70px;
-    padding-bottom: 30px;
-    padding-right: 40px;
-    padding-left: 13%;
+    padding: 70px 40px 30px 13%;
 }
 .who-we-are .who-we-are-dis h2 {
     margin-bottom: 30px;
