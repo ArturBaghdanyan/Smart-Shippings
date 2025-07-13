@@ -16,9 +16,10 @@
     line-height: 26px;
 }
 
-.who-we-are .who-we-are-img {   
+.who-we-are .who-we-are-img {  
     width: 65%;
-    height: 400px !important;
+    height: auto;
+    margin: 50px;
 }
 
 .who-we-are img {
